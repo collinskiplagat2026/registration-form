@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            rgba(15, 20, 45, 0.45),
+            rgba(15, 20, 45, 0.60)
+        ),
+        url("./images/loginbg.jpg") center/cover no-repeat fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    width: 100%;
+    color: white;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.9);
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #9b83ff;
+    box-shadow: 0 0 0 3px rgba(155,131,255,0.2);
+}
+
+.options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+}
+
+.remember label {
+    width: auto;
+    margin: 0;
+    font-size: 13px;
+}
+
+.remember input {
+    accent-color: #7551e8;
+}
+
+.options a,
+.signup a {
+    color: #d6caff;
+    text-decoration: none;
+}
+
+.options a:hover,
+.signup a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+form button {
+    background: linear-gradient(135deg, #7551e8, #4389e8);
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.signup {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.social-login {
+    width: 100%;
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social-login p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.social-login button {
+    width: 100%;
+    max-width: 250px;
+    margin: 7px auto;
+}
+
+.google {
+    background: white;
+    color: #333;
+}
+
+.facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.twitter {
+    background: #000000;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 28px 22px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
